@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Speed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar"></div>
+            <span>Trisha</span>
+        </div>
+        <h2>Trisha Bitcoin Wallet Withdrawal</h2>
+        <div class="option">Priority - 0.00003367 BTC ($3.23) <span class="check-icon">✔</span></div>
+        <div class="option">Rush - 0.0000171 BTC ($1.65) <span class="check-icon">✔</span></div>
+        <div class="option">Standard - Free <span class="check-icon">✔</span></div>
+        <button class="next-btn" onclick="showLoading()">Click to activate</button>
+    </div>
+
+    <div class="loading" id="loading">
+        <h2>Processing...</h2>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>$550</h2>
+            <p>You will be required to pay this amount to activate your withdrawal. Please contact Top Management for payment details.</p>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
